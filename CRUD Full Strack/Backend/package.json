@@ -1,0 +1,21 @@
+{
+	"name": "backend",
+	"version": "1.0.0",
+	"main": "index.js",
+	"type": "module",
+	"scripts": {
+		"start": "node index.js",
+		"dev": "nodemon index.js"
+	},
+	"author": "Your Name",
+	"license": "ISC",
+	"description": "A backend application for CRUD operations.",
+	"dependencies": {
+		"dotenv": "^16.5.0",
+		"express": "^5.1.0",
+		"mysql": "^2.18.1"
+	},
+	"devDependencies": {
+		"nodemon": "^3.1.9"
+	}
+}
