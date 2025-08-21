@@ -9,15 +9,10 @@ const authenticate = (req, res , next ) => {
     if(!authHeader) {
         return res.status(401).json({ message: "Unauthorized" });
     }
-//    const token  = authHeader.split("")[1]
    const token  = authHeader
-   
-console.log(token , " jneil")
 
     try{
-        console.log(token,  " hkjsdlhasdkfsd")
         const decoded = jwt.verify(token ,process.env.JWT_SECRET);
-        console.log(decoded)
         req.user = decoded
  return next();
     } catch (err) {
